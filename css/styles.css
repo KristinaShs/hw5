@@ -84,6 +84,7 @@ color: var(--main-text-color);
 .navigation{
 color: var(--main-text-color);
 text-decoration: none;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navigation:hover {
  background-color: transparent;
@@ -157,6 +158,7 @@ background-color: transparent;
 .contact{
     align-items: center;
     display: flex;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact{
     list-style-type: none; 
@@ -210,6 +212,7 @@ color: var(--link-text-color);
 .icon{
     margin-right: 10px;
     fill: currentColor;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon:hover,
 .icon:focus{
@@ -266,6 +269,7 @@ padding-bottom: 30px;
     letter-spacing: 0.06em;
     color: var(--button-color);
     background-color: var(--button-background-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 .button:hover {
     background: var(--button-background-color);
@@ -433,7 +437,11 @@ margin-bottom: 10px;
     margin-bottom: 30px;
 }
 
-
+.network-link{
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+}
 .network-link:hover,
 .netwotk-link:focus{
     background-color: var(--button-background-color);
@@ -483,6 +491,8 @@ margin-bottom: 10px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-link:hover,
 .clients-link:focus {
@@ -535,6 +545,8 @@ letter-spacing: 0.03em;
 text-align: center;
 color: var(--main-text-color);
 background-color: var(--link-background-color);
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -560,6 +572,7 @@ margin-bottom: 30px;
 .image-item{
     width: 370px;
     border: 1px solid #EEEEEE;
+    transition:box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .image-item:hover,
 .image-item:focus{
@@ -579,6 +592,10 @@ text-decoration: none;
 .image-name{
     padding-left: 24px;
     padding-right: 24px;
+    margin-bottom: 10px;
+}
+.image-item .card-link{
+    text-decoration: none;
 }
 .type{
 font-weight: 400;
@@ -618,7 +635,7 @@ color: var(--rare-white-text-color);
     background: rgba(33, 150, 243, 0.9);
     padding: 63px 24px;
     transform: translateY(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 1500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .image-item:hover .project-info,
 .image-item:focus .project-info{
@@ -713,6 +730,7 @@ background-color: rgba(255, 255, 255, 0.1);
 border-radius: 50%;
 justify-content: center;
  align-items: center;
+ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .join-link:hover,
 .join-link:focus{
